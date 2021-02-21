@@ -1,0 +1,36 @@
+#pdfDownloader {
+    position: fixed;
+    margin-left: 48%;
+    margin-top: -5%;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: white;
+    background-color: rgb(18, 185, 115);
+    border: none;
+    outline: none;
+    overflow: hidden;
+    padding: 8px 16px;
+    cursor: pointer;
+    filter: drop-shadow(0 2px 8px rgba(#275efe, 0.32));
+    transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); //ease-out-cubic
+}
+
+#pdfDownloader:hover {
+    box-shadow: 0px 0px 15px 5px rgb(148, 67, 67);
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    html, body {
+        width: 210mm;
+    }
+    .btn_print {
+        display: none;
+    }
+}
